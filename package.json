@@ -1,6 +1,6 @@
 {
   "name": "explanation",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A fancy logging tool",
   "main": "lib/explanation.js",
   "scripts": {
