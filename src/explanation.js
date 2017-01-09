@@ -123,3 +123,7 @@ export const error = function (msg) {
     error,
   });
 };
+
+Object.assign(Explanation, {
+  info, warn, error,
+});
