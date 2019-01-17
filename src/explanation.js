@@ -22,10 +22,11 @@ export default class Explanation {
   }
 
   print () {
-    if (!this.message)
+    if (!this.message) {
       return;
+    }
 
-    let log = this.log;
+    const log = this.log;
 
     let msg = this.leadingString + this.message;
     console[log]('\n' + this.messageStyle(msg));
@@ -36,7 +37,7 @@ export default class Explanation {
     }
 
     let explain = this.explain;
-    let explainStyle = this.explainStyle;
+    const explainStyle = this.explainStyle;
 
     if (explain) {
       if (!Array.isArray(explain)) {
@@ -74,8 +75,8 @@ export default class Explanation {
   }
 }
 
-let _formatMsg = function (msg) {
-  let _msg = {};
+const _formatMsg = function (msg) {
+  const _msg = {};
   if (msg) {
     if (msg instanceof Error) {
       _msg.error = msg;
